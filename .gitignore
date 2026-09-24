@@ -1,0 +1,28 @@
+# Secret Environment Variables (Prevents committing Groq API keys)
+.env
+.env.*
+!.env.example
+
+# Virtual Environments (Managed by uv)
+.venv/
+venv/
+env/
+
+# Python Bytecode & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# Local Vector Database & Chroma Storage (If persistent storage is enabled later)
+chroma/
+chroma_db/
+.chroma/
+*.sqlite3
+
+# IDEs and OS System Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
